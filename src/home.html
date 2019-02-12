@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Intelligent Tutor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <!-- <link href="loading/jm.spinner.css" type="text/css" rel="stylesheet"> -->
+
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    </head>
+    <body>
+        <div class="container">
+            
+            <h1>irampups-geeksters</h1>
+            <p class="page-description">Self-Preparation App for Demo and Presentation</p>
+            <h3 class="no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo In Google Chrome.</h3>
+            <div class="button-options-right">
+                <a  id="home-button" class="pronounciation" onclick="softSkill()">Soft Skill</a>
+                <a  id="home-button1"  class="goRealTime" onclick="goRealTime()" >Go Real Time</a>
+                <a  id="home-button1"  class="modules" onclick="startPreparation()">Start Preparation</a>
+            </div>
+            <!-- <canvas id="avatar" src="https://giphy.com/embed/E3Gqhoz7bjU4M"></canvas> -->
+            <!-- <iframe src="https://giphy.com/embed/E3Gqhoz7bjU4M" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/space-animated-gif-nasa-E3Gqhoz7bjU4M"></a></p> -->
+            <div class="avatar">
+                <iframe src="css/images/finalavatarsilent.gif"  style="-webkit-transform:scale(0.5); height: 688px; width:770px; margin-top: -123px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </div>
+            <div class="button-options-left">
+                <a  id="home-button" class="speedtest" onclick="speedTest()">Speed Test</a>
+                <a id="home-button1" class="posture" onclick="postureControl()">Posture Control</a>
+                <a  id="home-button1" class="modules" onclick="searchModules()">Search Modules</a>
+            </div>
+            <div class="app"> 
+                <!-- <h3>Add New Note</h3> -->
+                <div class="input-single">
+                    <textarea id="note-textarea" placeholder="Speak using voice recognition." rows="6"></textarea>
+                </div>         
+                <div class="countdown"></div>
+                <button id="start-record-btn" title="Start Recording">Start Recognition</button>
+                <button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>
+                <button id="save-note-btn" title="Save">Save</button>   
+                <p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.</p>
+                
+                <h3>Your Speech to Text</h3>
+                <ul id="notes">
+                    <li>
+                        <p class="no-notes"></p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="application/javascript" src="js/script.js"></script>
+        <span id="response"></span>
+        <!-- <script src="loading/jm.spinner.js"></script> -->
+        <!-- <script>
+            document.getElementByClass('container').ondragstart = function () { return false; };
+        </script> -->
+    </body>
+</html>
+
