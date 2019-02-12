@@ -1,0 +1,19 @@
+{
+  "name": "irampup-gekstar",
+  "version": "2.0.0",
+  "description": "next gen learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asharma182/irampup-geekstart-v2.git"
+  },
+  "author": "geekstars",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asharma182/irampup-geekstart-v2/issues"
+  },
+  "homepage": "https://github.com/asharma182/irampup-geekstart-v2#readme"
+}
